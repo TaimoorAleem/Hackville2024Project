@@ -16,12 +16,12 @@ const NavBar = () => {
           <NavigationMenuList className="flex space-x-9">
             <NavigationMenuItem>
               <NavigationMenuLink href="/findfriends" className="hover:underline">
-                Find Friends
+                Home
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink href="/findgroups" className="hover:underline">
-                Find Groups
+              <NavigationMenuLink href="/" className="hover:underline">
+                Log Out
               </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>

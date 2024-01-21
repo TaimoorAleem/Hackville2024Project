@@ -1,7 +1,8 @@
-import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { UserCircle, Key, CheckCircle2 } from "lucide-react"; 
+import Link from "next/link";
 
 
 export default function Register() {
@@ -44,22 +45,25 @@ export default function Register() {
               </div>
             </div>
             <div className="text-center mt-4">
-              <p className="text-white mb-2">
-                Don't have an account?
+              <p>
+                <span className="text-white">Already have an account?</span>
+                <br />
+                <a href="/login" className="text-cyan-400 hover:underline cursor-pointer transition duration-300 ease-in-out">
+                  Login instead
+                </a>
               </p>
-              <a
-                className="text-blue-200 hover:underline cursor-pointer transition duration-300 ease-in-out font-semibold"
-                href="/register"
-              >
-                Register
-              </a>
             </div>
-            <Link
-              href="/editprofile"
-              className="w-full flex justify-center items-center py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 shadow-md"
-            >
-              <CheckCircle2 className="mr-2 h-4 w-4" />
-              Register
+            <Link href="/findfriends" className="text-center" passHref>
+              <Button 
+                type="submit"
+                className= "bg-transparent mt-2 border-cyan-400 border-2 rounded-3xl text-white text-xl p-6 font-semibold hover:bg-cyan-400 mx-auto"
+                style={{ 
+                  boxShadow: '0 2px 15px rgba(8, 145, 178, 0.8)',
+                }}
+              >
+                <CheckCircle2 className="mr-2 h-4 w-4" />
+                Register
+              </Button>
             </Link>
           </form>
         </div>{" "}
