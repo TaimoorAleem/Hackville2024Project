@@ -10,8 +10,8 @@ export default function EditProfile() {
       <NavBar />
       <div className="min-h-screen grid bg-gradient-to-r from-[#0040ad] to-[#0294c5] dark:from-black dark:to-black">
         <div className="flex flex-col items-center justify-center p-8">
-          <div className="w-full max-w-4xl border-2 border-white p-5 rounded-lg shadow-lg">
-            <h2 className="text-center text-xl font-semibold mb-6 text-white">
+          <div className="w-full max-w-4xl p-5 rounded-lg">
+            <h2 className="text-center text-xl font-semibold mb-10 text-white">
               Edit Profile
             </h2>
             <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -33,7 +33,7 @@ export default function EditProfile() {
                 </div>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <div>
                   <Label htmlFor="username" className="text-white">
                     Username
